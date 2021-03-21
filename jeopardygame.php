@@ -74,8 +74,8 @@
             <div class="cell-group grid-cell" data-row="1" data-col="0">
                 <div class="cell points">
                     <div class="value">
-                        <!--<a href="card.php" id="tables-1">$100</a>&ndash;&gt;-->
-                        <a href='card.php?id=tables-100'>$100</a>
+                        <!--<a href="cards.php" id="tables-1">$100</a>&ndash;&gt;-->
+                        <a href='cards.php?id=tables-100'>$100</a>
 
 
 
@@ -134,7 +134,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="1" data-col="1">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=image-100'>$100</a></div>
+                    <div class="value"><a href='cards.php?id=image-100'>$100</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -142,7 +142,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="1" data-col="2">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=forms-100'>$100</a></div>
+                    <div class="value"><a href='cards.php?id=forms-100'>$100</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -150,7 +150,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="1" data-col="3">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=css-100'>$100</a></div>
+                    <div class="value"><a href='cards.php?id=css-100'>$100</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -158,7 +158,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="1" data-col="4">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=media-100'>$100</a></div>
+                    <div class="value"><a href='cards.php?id=media-100'>$100</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -170,7 +170,7 @@
             <div class="cell-group grid-cell" data-row="2" data-col="0">
                 <div class="cell points">
                     <div class="value">
-                        <a href='card.php?id=tables-200'>$200</a>
+                        <a href='cards.php?id=tables-200'>$200</a>
                     </div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -179,7 +179,7 @@
             <div class="cell-group grid-cell" data-row="2" data-col="1">
                 <div class="cell points">
                     <div class="value">
-                        <a href='card.php?id=maps-200'>$200</a>
+                        <a href='cards.php?id=maps-200'>$200</a>
                     </div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -187,21 +187,21 @@
             </div>
             <div class="cell-group grid-cell" data-row="2" data-col="2">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=forms-200'>$200</a></div>
+                    <div class="value">    <a href='cards.php?id=forms-200'>$200</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
             </div>
             <div class="cell-group grid-cell"  data-row="2" data-col="3">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=css-200'>$200</a></div>
+                    <div class="value">    <a href='cards.php?id=css-200'>$200</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
             </div>
             <div class="cell-group grid-cell" data-row="2" data-col="4">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=media-200'>$200</a></div>
+                    <div class="value">    <a href='cards.php?id=media-200'>$200</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
@@ -210,35 +210,35 @@
         <div class="grid-row grid-row-questions ">
             <div class="cell-group grid-cell"  data-row="3" data-col="0">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=tables-300'>$300</a></div>
+                    <div class="value">    <a href='cards.php?id=tables-300'>$300</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
             </div>
             <div class="cell-group grid-cell" data-row="3" data-col="1">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=image-300'>$300</a></div>
+                    <div class="value">    <a href='cards.php?id=image-300'>$300</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
             </div>
             <div class="cell-group grid-cell" data-row="3" data-col="2">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=-forms'>$300</a></div>
+                    <div class="value">    <a href='cards.php?id=-forms'>$300</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
             </div>
             <div class="cell-group grid-cell" data-row="3" data-col="3">
                 <div class="cell points">
-                    <div class="value">    <a href='card.php?id=css-300'>$300</a></div>
+                    <div class="value">    <a href='cards.php?id=css-300'>$300</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
             </div>
             <div class="cell-group grid-cell" data-row="3" data-col="4">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=media-300'>$300</a></div>
+                    <div class="value"><a href='cards.php?id=media-300'>$300</a></div>
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
                 </div>
@@ -247,7 +247,7 @@
         <div class="grid-row grid-row-questions  grid-forth-row">
             <div class="cell-group grid-cell" data-row="4" data-col="0">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=tables-400'>$400</a></div>
+                    <div class="value"><a href='cards.php?id=tables-400'>$400</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -255,7 +255,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="4" data-col="1">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=image-400'>$400</a></div>
+                    <div class="value"><a href='cards.php?id=image-400'>$400</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -263,7 +263,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="4" data-col="2">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=forms-400'>$400</a></div>
+                    <div class="value"><a href='cards.php?id=forms-400'>$400</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -271,7 +271,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="4" data-col="3">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=css-400'>$400</a></div>
+                    <div class="value"><a href='cards.php?id=css-400'>$400</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -279,7 +279,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="4" data-col="4">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=media-400'>$400</a></div>
+                    <div class="value"><a href='cards.php?id=media-400'>$400</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -289,7 +289,7 @@
         <div class="grid-row grid-row-questions grid-last-row ">
             <div class="cell-group grid-cell"data-row="5" data-col="0">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=tables-500'>$500</a></div>
+                    <div class="value"><a href='cards.php?id=tables-500'>$500</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -297,7 +297,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="5" data-col="1">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=image-500'>$500</a></div>
+                    <div class="value"><a href='cards.php?id=image-500'>$500</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -305,7 +305,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="5" data-col="2">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=forms-500'>$500</a></div>
+                    <div class="value"><a href='cards.php?id=forms-500'>$500</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -313,7 +313,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="5" data-col="3">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=css-500'>$500</a></div>
+                    <div class="value"><a href='cards.php?id=css-500'>$500</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
@@ -321,7 +321,7 @@
             </div>
             <div class="cell-group grid-cell" data-row="5" data-col="4">
                 <div class="cell points">
-                    <div class="value"><a href='card.php?id=media-500'>$500</a></div>
+                    <div class="value"><a href='cards.php?id=media-500'>$500</a></div>
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>

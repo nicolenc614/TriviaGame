@@ -4,8 +4,8 @@
 body {
     font-family: "Permanent Marker";
     line-height: 1.5;
-    color: #05404f;
-	background-color: #1ac236;
+    color: #212529;
+	background-color: #2a3698;
 	height:100%;
 
 }
@@ -16,13 +16,13 @@ p{
     text-align: center;
 }
 a {
-    color: rgb(51, 255, 0);
-   
+    color: yellow;
+    text-decoration: none;
     text-align: center;
 }
 .grid {
     padding:60px;
-    background: #05404f;
+    background: #2a3698;
     position:relative;
     transform-origin: center;
     font-size:24px;
@@ -40,7 +40,7 @@ a {
     border:3px solid black;
     overflow:hidden;
     position:relative;
-    background-color: #05404f;
+    background-color: #2a3698;
     flex:1;
 }
 
@@ -238,7 +238,7 @@ h1 {
         width: 70%;
     }
 }
-.signin {
+.btn {
     border:none;
     display:inline-block;
     padding:1rem 2rem;
@@ -252,7 +252,7 @@ h1 {
     white-space:nowrap;
 }
 
-.now {
+.white {
     color:#000!important;
     background-color:#fff!important;
 }

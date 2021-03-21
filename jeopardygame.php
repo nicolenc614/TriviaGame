@@ -45,27 +45,27 @@
 
             <div class="grid-cell " data-row="0" data-col="0">
                 <div class="cell">
-                    <div class="cell-inner cat-cell">Tables</div>
+                    <div class="cell-inner cat-cell">Animals</div>
                 </div>
             </div>
             <div class="grid-cell " data-row="0" data-col="1">
                 <div class="cell">
-                    <div class="cell-inner cat-cell">Image Maps</div>
+                    <div class="cell-inner cat-cell">Foods</div>
                 </div>
             </div>
             <div class="grid-cell " data-row="0" data-col="2">
                 <div class="cell">
-                    <div class="cell-inner cat-cell">Forms</div>
+                    <div class="cell-inner cat-cell">Tourism</div>
                 </div>
             </div>
             <div class="grid-cell " data-row="0" data-col="3">
                 <div class="cell">
-                    <div class="cell-inner cat-cell">CSS</div>
+                    <div class="cell-inner cat-cell">Music</div>
                 </div>
             </div>
             <div class="grid-cell " data-row="0" data-col="4">
                 <div class="cell">
-                    <div class="cell-inner cat-cell">Multimedia</div>
+                    <div class="cell-inner cat-cell">Movies</div>
                 </div>
             </div>
         </div>

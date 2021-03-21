@@ -1,8 +1,8 @@
 <?php
 
-$email = $_POST["email"];
+$username = $_POST["username"];
 $password = $_POST["password"];
-$filename = 'accounts.txt';
+$filename = 'users.txt';
 $file = file($filename);
 $users = [];
 
@@ -15,17 +15,17 @@ for ($i = 0; $i < count($file); $i++) {
 $error = false;
 $exists = false;
 
-if (empty($email) || empty($password)) {
+if (empty($username) || empty($password)) {
     $error = true;
 }
 
 foreach ($users as $u) {
-    if ($u == $email) {
+    if ($u == $username) {
         $exists = true;
     }
 }
 if (!$error && !$exists) {
-    $new_user = array($email,$password . "\n");
+    $new_user = array($username,$password . "\n");
     $str = join(',', $new_user);
     file_put_contents($filename, $str, FILE_APPEND);
 }
@@ -117,14 +117,14 @@ if (!$error && !$exists) {
         <?php if ($error) { ?>
             <h1>Error!</h1>
             <p>We're sorry. You've left some fields empty. Please try again.</p><br>
-            <a href="signup.html">back</a>
+            <a href="signup.php">back</a>
         <?php } else if ($exists) { ?>
             <h1>Error!</h1>
             <p>We're sorry. The email account already exists. Please try again.</p>
-            <a href="signup.html">back</a>
+            <a href="signup.php">back</a>
         <?php } else { ?>
-            <h1>Welcome, <?= $email ?>!</h1>
-            <a href="Jeopardygame.html">continue</a>
+            <h1>Welcome, <?= $username ?>!</h1>
+            <a href="jeopardygame.php">continue</a>
         <?php } ?>
         </div>
     </body>

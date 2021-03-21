@@ -2,33 +2,33 @@
 
     if(isset($_POST['Submit'])) {
         $accounts = array('admin' => 'admin');
-        $email = isset($_POST['email']) ? $_POST['email'] : '';
+        $Username = isset($_POST['Username']) ? $_POST['Username'] : '';
         $Password = isset($_POST['Password']) ? $_POST['Password'] : '';
 
         if(isset($_POST['check'])) {
-            setcookie('email', $email, time()+(86400*30));
+            setcookie('Username', $Username, time()+(86400*30));
             setcookie('Password', $Password, time()+(86400*30));
         } else {
-            setcookie('email', $email, time()-1);
+            setcookie('Username', $Username, time()-1);
             setcookie('Password', $Password, time()-1);
         }
 
-        $file = file("accounts.txt");
+        $file = file("users.txt");
         for ($i = 0; $i < count($file); $i++) {
             $temp = explode(",", $file[$i]);
             $k = $temp[0];
             $tempv = $temp[1];
             $v = rtrim($tempv);
-            $accounts[$k] = $v;
+            $users[$k] = $v;
         }
-        print_r($accounts);
-        if (isset($accounts[$email]) && $accounts[$email] == $Password) {
-            $_SESSION['Userdata']['email']=$accounts[$email]; // password
-            $_SESSION['email']=$email; // email
-            header("location:Jeopardygame.html");
+        print_r($users);
+        if (isset($users[$Username]) && $users[$Username] == $Password) {
+            $_SESSION['Userdata']['Username']=$users[$Username]; // password
+            $_SESSION['Username']=$Username; // username
+            header("location:jeopardygame.php");
             exit;
         } else {
-            $msg= "<span style='color:#ff0000'>Invalid Login Details</span>";
+            $msg= "<span style='color:#982a2a'>Invalid Login Details</span>";
             echo $msg;
         }
     }
@@ -39,93 +39,90 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title> Jeopardy</title>
+        <title>Jeopardy Game</title>
         <style>
-            body {font-family: Arial, Helvetica, sans-serif; background-color: rgb(166, 255, 0);}
-            * {box-sizing: border-box}
-
-            /* Full-width input fields */
-            input[type=text], input[type=password] {
-              width: 100%;
-              padding: 15px;
-              margin: 5px 0 22px 0;
-              display: inline-block;
-              border:aquamarine;
-              border-style: double;
-              border-radius: 50px;
-              background: #f1f1f1;
+           
+            body {
+                height: 100vh;
+                width: 100vw;
+                background-color: #bf761d;
             }
-
-            input[type=text]:focus, input[type=password]:focus {
-              background-color: #ddd;
-              outline: none;
+            h1 {
+                /* color: white; */
+                text-align: center;
             }
-
-            hr {
-              border: 1px solid #f1f1f1;
-              margin-bottom: 25px;
+            .main {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #1beb0c;
+                
             }
-
-            /* Set a style for all buttons */
-            button {
-              background-color: #3f6b36;
-              color: white;
-              padding: 14px 20px;
-              margin: 8px 0;
-              border: dotted;
-              border-radius: 50px;
-              cursor: pointer;
-              width: 100%;
-              opacity: 0.9;
+            .form {
+                position: relative;
+                background: #8a7e94;
+                margin: 0 auto;
+                padding: 3rem;
+                text-align: center;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
             }
-
-            button:hover {
-              opacity:1;
+            .form-input {
+                font: 0.8rem  sans-serif;
+                outline: 0;
+                background: #bdacb4;
+                width: 100%;
+                border: 0;
+                margin: 0 0 1rem;
+                padding: 1rem;
+                box-sizing: border-box red;
             }
-
-            /* Extra styles for the cancel button */
-            .cancelbtn {
-              padding: 14px 20px;
-              background-color: #570f09;
+            .form-input[type="submit"] {
+                text-transform: uppercase;
+                background: #c23806;
+                color: white;
+                cursor: pointer;
             }
-
-            /* Float cancel and signup buttons and add an equal width */
-            .cancelbtn, .signupbtn {
-              float: left;
-              width: 50%;
+            .form-input[type="submit"]:hover {
+                background: #9d0d91;
             }
-
-            /* Add padding to container elements */
-            .container {
-              padding: 16px;
+            .form h1 {
+                font: 3rem sans-serif;
+                color: #c23806;
             }
-
-            /* Clear floats */
-            .clearfix::after {
-              content: "";
-              clear: both;
-              display: table;
+            .form p {
+                font: 0.75rem "Roboto Light", sans-serif;
+                margin: 0.5rem 0 0;
             }
-
-            /* Change styles for cancel button and signup button on extra small screens */
-            @media screen and (max-width: 300px) {
-              .cancelbtn, .signupbtn {
-                 width: 100%;
-              }
+            .check {
+                float: left;
+                margin-right: 0.5rem;
+                margin-bottom: 1rem;
             }
-            </style>
+            .form label {
+                float: left;
+                font: 0.75rem "Roboto Light", sans-serif;
+                padding-top: 0.2rem;
+            }
+            a:hover {
+                color: #c4108e;
+            }
+        </style>
     </head>
     <body>
         <div class="main">
             <div class="form">
                 <form action="" method="post" class="login-form">
-                    <h1>Login</h1>
-                    <input class="form-input" type="text" name="email" placeholder="email" value="<?php echo @$_COOKIE['email']; ?>">
+                    <h1>Sign in</h1>
+                    <input class="form-input" type="text" name="Username" placeholder="username" value="<?php echo @$_COOKIE['Username']; ?>">
                     <input class="form-input" type="password" name="Password" placeholder="password" value="<?php echo @$_COOKIE['Password']; ?>">
                     <input class="check" type="checkbox" name="check" checked>
                     <label for="check">Remember Me</label>
-                    <input class="form-input" type="submit" name="Submit" value="LOGIN">
-                    <p>Not registered? <a href="signup.html">Create an account</a></p>
+                    <input class="form-input" type="submit" name="Submit" value="SIGN IN">
+                    <p>Not registered? <a  href="signup.php">Create an account</a></p>
                 </form>
             </div>
         </div>

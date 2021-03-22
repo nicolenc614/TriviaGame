@@ -76,7 +76,8 @@
     </div>
 
     <!-- Left-aligned links (default) -->
-    <a href="#news">Welcome, <?= $_SESSION['Username'] ?></a>
+    <!-- <a href="#news">Welcome, <?= $_SESSION['Username'] ?></a> -->
+    <a href="leaderboard.php">Leaderboard</a>
     <a href="#contact">Score: <?=$_COOKIE[$cookie_name]?></a>
 
     <!-- Right-aligned links -->

@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Questions</title>
-    <!-- <link href="jeopardy.css" type="text/css" rel="stylesheet"/> -->
+    <link href="jeopardy.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 <?php include("heads.php");?>
@@ -203,7 +203,7 @@ elseif ($id == "tourism-100") { ?>
     </form>
     <?php
 } //music
-elseif (id == "music-100") { ?>
+elseif ($id == "music-100") { ?>
     <form action="answers.php" method="post">
 
         <h2>Which singer is a godmother to Elton John’s two sons?</h2><br>
@@ -215,7 +215,7 @@ elseif (id == "music-100") { ?>
 
     </form>
     <?php
-} elseif (id == "music-200") { ?>
+} elseif ($id == "music-200") { ?>
     <form action="answers.php" method="post">
 
         <h2>In 1985, Tina Turner won the Grammy for Record of the Year for what song?	“What’s Love Got To Do With It”.</h2><br>
@@ -228,7 +228,7 @@ elseif (id == "music-100") { ?>
 
     </form>
     <?php
-} elseif (id == "music-300") { ?>
+} elseif ($id == "music-300") { ?>
     <form action="answers.php" method="post">
 
         <h2>Which Beatle had dyslexia?</h2><br>
@@ -240,7 +240,7 @@ elseif (id == "music-100") { ?>
 
     </form>
     <?php
-} elseif (id == "music-400") { ?>
+} elseif ($id == "music-400") { ?>
     <form action="answers.php" method="post">
 
         <h2>Which pop star played 27 different instruments on their debut album “For You”?</h2><br>
@@ -252,7 +252,7 @@ elseif (id == "music-100") { ?>
 
     </form>
     <?php
-} elseif (id == "music-500") { ?>
+} elseif ($id == "music-500") { ?>
     <form action="answers.php" method="post">
 
         <h2>Who sang a duet with Ed Sheeran on the song “Perfect”?</h2><br>
@@ -265,7 +265,7 @@ elseif (id == "music-100") { ?>
     </form>
     <?php
 } //movies
-elseif (id == "movies-100") { ?>
+elseif ($id == "movies-100") { ?>
     <form action="answers.php" method="post">
 
         <h2>Alicia Vikander plays this young woman who switches jobs from bicycle courier to tomb raider?</h2><br>
@@ -277,7 +277,7 @@ elseif (id == "movies-100") { ?>
 
     </form>
     <?php
-} elseif (id == "movies-200") { ?>
+} elseif ($id == "movies-200") { ?>
     <form action="answers.php" method="post">
 
         <h2>In Justice League Jason Momoa pays this hero of Atlantis?</h2><br>
@@ -289,7 +289,7 @@ elseif (id == "movies-100") { ?>
 
     </form>
     <?php
-} elseif (id == "movies-300") { ?>
+} elseif ($id == "movies-300") { ?>
     <form action="answers.php" method="post">
 
         <h2>In 2016 she donned the pillbox hat to play Jackie (Kennedy)?</h2><br>
@@ -301,7 +301,7 @@ elseif (id == "movies-100") { ?>
 
     </form>
     <?php
-} elseif (id == "movies-400") { ?>
+} elseif ($id == "movies-400") { ?>
     <form action="answers.php" method="post">
 
         <h2>Leonardo DiCaprio was just dreamy as a master of psychic espionage in this flick?</h2><br>
@@ -313,7 +313,7 @@ elseif (id == "movies-100") { ?>
 
     </form>
     <?php
-} elseif (id == "movies-500") { ?>
+} elseif ($id == "movies-500") { ?>
     <form action="answers.php" method="post">
 
         <h2>Can we talk? A documentary covered a year in the life of this red-carpet comedienne: A Piece of Work?</h2><br>
@@ -324,7 +324,7 @@ elseif (id == "movies-100") { ?>
 
 
     </form>
-    </div>
+</div>
     <?php
 }
 ?>

@@ -4,8 +4,8 @@
 body {
     font-family: "Permanent Marker";
     line-height: 1.5;
-    color: #212529;
-	background-color: #2a3698;
+    /* color: #2e076e; */
+	background-color: #390772;
 	height:100%;
 }
 h2{
@@ -39,7 +39,7 @@ a {
     border:3px solid black;
     overflow:hidden;
     position:relative;
-    background-color: #2a3698;
+    background-color: #3f056e;
     flex:1;
 }
 

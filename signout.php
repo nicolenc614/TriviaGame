@@ -1,5 +1,6 @@
 <?php session_start(); /* Starts the session */
-session_destroy(); /* Destroy started session */
+unset($_SESSION["username"]);
+unset($_SESSION["password"]); /* Destroy started session */
 header("location:index.php");
 exit;
 ?>

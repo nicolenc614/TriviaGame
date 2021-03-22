@@ -72,7 +72,7 @@
 
     <!-- Centered link -->
     <div class="topnav-centered">
-        <a href="boardgame.php" class="active">JEOPARDY</a>
+        <a href="jeopardygame.php" class="active">JEOPARDY</a>
     </div>
 
     <!-- Left-aligned links (default) -->
@@ -81,7 +81,7 @@
 
     <!-- Right-aligned links -->
     <div class="topnav-right">
-        <a class="signout.php" href="#home">Log Out</a>
+        <a class="signout.php" href="signout.php">Log Out</a>
         <a href="reset.php">Start Over</a>
     </div>
 

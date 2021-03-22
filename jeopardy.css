@@ -7,7 +7,6 @@ body {
     color: #212529;
 	background-color: #2a3698;
 	height:100%;
-
 }
 h2{
     text-align: center;
@@ -238,7 +237,7 @@ h1 {
         width: 70%;
     }
 }
-.btn {
+.signin {
     border:none;
     display:inline-block;
     padding:1rem 2rem;
@@ -252,7 +251,7 @@ h1 {
     white-space:nowrap;
 }
 
-.white {
+.now {
     color:#000!important;
     background-color:#fff!important;
 }

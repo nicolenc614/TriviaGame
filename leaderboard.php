@@ -44,18 +44,59 @@
 <div>
     <table>
         <tr>
+            <td>Name</td>
             <td>Ranking</td>
-            <td>Ranking</td>
-            <td>Ranking</td>
+            <td>score</td>
         </tr>
-    </table>
+  
+
+    <!-- $cookie_name = "score";
+        $_COOKIE[$cookie_name];
+        $value = (int) $_COOKIE["$cookie_name"];
+
+        setcookie($cookie_name, $value); -->
 
 <?php
+include ("answers.php");
+score.session.session_start();
 
+$cookie_name = "score";
+$cookie_value = 0;
+define($cookie_name, $_COOKIE[$cookie_name]);
 
+if ($value != 0) 
+{
+    $username = $_SESSION['username'];
+
+    file_put_contents($textfile, "\n" .$username. ":". $value, FILE_APPEND);
+}
+
+$textfile = file('leaderboard.txt');
+$place = 0;
+
+foreach ($textfile as $initialPlace)
+{
+    $nextFile = (explode(":", $initialPlace)[0]);
+    $newValue = (explode(":", $initialPlace)[1]);
+    echo $value.'<br>';
+}
+
+foreach ($textfile as $formerPlace)
+{
+    $place++;
+    $previousLeader = (explode(":", $formerPlace)[0]);
+    $oldValue = (explode(":", $formerPlace)[1]);
+
+    if ($newValue > $oldValue)
+    {
+        echo "<tr><td>$place</td><td>$newFile</td><td>$newValue</td></tr> ";
+	}else {
+		echo "<tr><td>$place</td><td>$previousLeader</td><td>$oldValue</td></tr> ";
+    }
+}
 ?>
 
-
+</table>
 
 
 

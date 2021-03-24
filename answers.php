@@ -1,6 +1,7 @@
 <html>
 <head>
     <?php include "heads.php"?>
+   
     <link href="jeopardy.css" rel="stylesheet" />
     <meta http-equiv = "refresh" content = "3; url = jeopardygame.php" />
 </head>
@@ -30,7 +31,7 @@ error_reporting(E_ERROR | E_PARSE);
 
 if (isset($_POST["animals-100"])) {
     $answer = $_POST["animals-100"];
-    if ($answer == "What are Walruses") {
+    if ($answer == "walruses") {
         ?>
         <h1>CORRECT!</h1><br>
 
@@ -67,7 +68,7 @@ if (isset($_POST["animals-100"])) {
 elseif (isset($_POST["animals-200"])) {
     error_reporting(E_ERROR | E_PARSE);
     $answer = $_POST["animals-200"];
-    if ($answer == "What is a Ruminant") {
+    if ($answer == "ruminant") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a><br><br>
@@ -104,7 +105,7 @@ elseif (isset($_POST["animals-200"])) {
 }
 elseif (isset($_POST["animals-300"])) {
     $answer = $_POST["animals-300"];
-    if ($answer == "What are leeches") {
+    if ($answer == "leeches") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -137,7 +138,7 @@ elseif (isset($_POST["animals-300"])) {
 }
 elseif (isset($_POST["animals-400"])) {
     $answer = $_POST["animals-400"];
-    if ($answer == "What is a Lark") {
+    if ($answer == "lark") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -168,7 +169,7 @@ elseif (isset($_POST["animals-400"])) {
 }
 elseif (isset($_POST["animals-500"])) {
     $answer = $_POST["animals-500"];
-    if ($answer == "What is a Gila Monster") {
+    if ($answer == "gila monster") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -203,7 +204,7 @@ elseif (isset($_POST["animals-500"])) {
 //foods
 elseif (isset($_POST["foods-100"])) {
     $answer = $_POST["foods-100"];
-    if ($answer == "What is Dr. Pepper") {
+    if ($answer == "dr.pepper") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -234,7 +235,7 @@ elseif (isset($_POST["foods-100"])) {
 }
 elseif (isset($_POST["foods-200"])) {
     $answer = $_POST["foods-200"];
-    if ($answer == "What is Sorbet and Sherbet.") {
+    if ($answer == "Sorbet and sherbet.") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -266,7 +267,7 @@ elseif (isset($_POST["foods-200"])) {
 
 elseif (isset($_POST["foods-300"])) {
     $answer = $_POST["foods-300"];
-    if ($answer == "What is Champagne") {
+    if ($answer == "champagne") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>

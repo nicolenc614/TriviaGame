@@ -64,7 +64,7 @@
  if ($value != 0) {
     $value   =  $_COOKIE[$cookie_name];
     $username = $_COOKIE["Username"];
-    file_put_contents("leaderboard.txt", "\n" .$value. ":".$username, FILE_APPEND);
+    file_put_contents("TopPlayers.txt", "\n" .$value. ":".$username, FILE_APPEND);
 
 }
 

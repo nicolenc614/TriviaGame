@@ -95,7 +95,7 @@ a {
 }
 
 .answer, .question, .cell-group, .category {
-	transition: .3s;
+	transition: 10s;
 }
 
 .cell-group:hover {
@@ -115,7 +115,8 @@ a {
 }
 
 .cell-group:hover .back, .cell-group:hover .front {
-	transition: .6s;
+	/* transition: .6s; */
+    transition: .6s;
 }
 
 .cell-group.empty {
@@ -202,7 +203,7 @@ h1 {
     border-radius: 5px;
     width: 30%;
     position: fixed;
-    transition: all 5s ease-in-out;
+    /* transition: all 5s ease-in-out; */
     text-align: center;
 }
 
@@ -216,7 +217,7 @@ h1 {
     position: absolute;
     top: 20px;
     right: 30px;
-    transition: all 200ms;
+    /* transition: all 200ms; */
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;

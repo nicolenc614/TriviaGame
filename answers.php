@@ -299,7 +299,7 @@ elseif (isset($_POST["foods-300"])) {
 
 elseif (isset($_POST["foods-400"])) {
     $answer = $_POST["foods-400"];
-    if ($answer == "What is Tapas.") {
+    if ($answer == "tapas.") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -333,7 +333,7 @@ elseif (isset($_POST["foods-400"])) {
 
 elseif (isset($_POST["foods-500"])) {
     $answer = $_POST["foods-500"];
-    if ($answer == "What is a Burrito") {
+    if ($answer == "burrito") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -367,7 +367,7 @@ elseif (isset($_POST["foods-500"])) {
 
 elseif (isset($_POST["tourism-100"])) {
     $answer = $_POST["tourism-100"];
-    if ($answer == "What are the Harry Potter movies") {
+    if ($answer == "harry potter") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -498,7 +498,7 @@ elseif (isset($_POST["tourism-400"])) {
 
 elseif (isset($_POST["tourism-500"])) {
     $answer = $_POST["tourism-500"];
-    if ($answer == "What is a Roller Coaster") {
+    if ($answer == "roller coaster") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -634,7 +634,7 @@ elseif (isset($_POST["music-300"])) {
 
 elseif (isset($_POST["music-400"])) {
     $answer = $_POST["music-400"];
-    if ($answer == "Who is Prince") {
+    if ($answer == "prince") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>
@@ -669,7 +669,7 @@ elseif (isset($_POST["music-400"])) {
 
 elseif (isset($_POST["music-500"])) {
     $answer = $_POST["music-500"];
-    if ($answer == "Who is Beyoncé") {
+    if ($answer == "beyonce") {
         ?>
         <h1>CORRECT!</h1><br>
         <a href="jeopardygame.php">Back to game</a>

@@ -8,7 +8,7 @@
         body {
             height: 100vh;
             width: 100vw;
-            background: #05404f;
+            background:white;
             overflow: hidden;
         }
         .header {
@@ -34,66 +34,57 @@
         .right {
             float: right;
         }
+        table, tr, th, td {
+           
+            border-spacing: 5px;
+            border: 5px solid black;
+
+        }
     </style>
 </head>
-<?php include("heads.php");?>
 
-
-<body>
-    <h2>Leaderboard</h2>
+<body style="background-color: white">
+    <h2>Users</h2>
 <div>
     <table>
         <tr>
-            <td>Name</td>
-            <td>Ranking</td>
-            <td>score</td>
+            <th>Place</th>
+            <th>Users</th>
+            <th>score</th>
         </tr>
   
 
-    <!-- $cookie_name = "score";
-        $_COOKIE[$cookie_name];
-        $value = (int) $_COOKIE["$cookie_name"];
-
-        setcookie($cookie_name, $value); -->
-
+    
 <?php
-include ("answers.php");
-score.session.session_start();
+ include("signin.php");
+ include("answers.php");
+ $value   =  $_COOKIE[$cookie_name];
+ $username = $_COOKIE["Username"];
 
-$cookie_name = "score";
-$cookie_value = 0;
-define($cookie_name, $_COOKIE[$cookie_name]);
+ if ($value != 0) {
+    $value   =  $_COOKIE[$cookie_name];
+    $username = $_COOKIE["Username"];
+    file_put_contents("leaderboard.txt", "\n" .$value. ":".$username, FILE_APPEND);
 
-if ($value != 0) 
-{
-    $username = $_SESSION['username'];
-
-    file_put_contents($textfile, "\n" .$username. ":". $value, FILE_APPEND);
 }
 
-$textfile = file('leaderboard.txt');
-$place = 0;
-
-foreach ($textfile as $initialPlace)
-{
-    $nextFile = (explode(":", $initialPlace)[0]);
-    $newValue = (explode(":", $initialPlace)[1]);
-    echo $value.'<br>';
+    $place = 0;
+    $textfile = file("TopPlayers.txt"); 
+    $newfile = fopen("NewTopPlayers.txt", "w+"); 
+    $initialFile = $textfile[0]; 
+        echo $initialFile."<br>"; 
+    fwrite($newfile, $initialFile); 
+    array_shift($textfile); 
+    rsort($textfile, SORT_NUMERIC); 
+    foreach($textfile as $line){ 
+	    $value = (explode(":",$line)[0]);
+	    $username = (explode(":",$line)[1]);
+	    $place++ ; 
+		            
+    echo "<tr><td>$place</td><td>$username</td><td>$$value</td></tr> ";
+    fwrite($newfile, trim($line)."\n"); 
 }
-
-foreach ($textfile as $formerPlace)
-{
-    $place++;
-    $previousLeader = (explode(":", $formerPlace)[0]);
-    $oldValue = (explode(":", $formerPlace)[1]);
-
-    if ($newValue > $oldValue)
-    {
-        echo "<tr><td>$place</td><td>$newFile</td><td>$newValue</td></tr> ";
-	}else {
-		echo "<tr><td>$place</td><td>$previousLeader</td><td>$oldValue</td></tr> ";
-    }
-}
+fclose($newfile); 
 ?>
 
 </table>

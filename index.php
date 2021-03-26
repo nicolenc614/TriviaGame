@@ -56,9 +56,10 @@
 		<body>
         <div class="main">
             <h1>JEOPARDY Game!</h1>
-            <a href="signin.php">
+            <a href="signin.html">
                 <span class="signin now">Sign in</span>
             </a>
+			<p>Not registered? <a  href="signup.php">Create an account</a></p>
         </div>
     </body>
 	</html>

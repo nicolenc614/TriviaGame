@@ -120,11 +120,12 @@ if (!$error && !$exists) {
             <a href="signup.php">back</a>
         <?php } else if ($exists) { ?>
             <h1>Error!</h1>
-            <p>We're sorry. The email account already exists. Please try again.</p>
+            <p>We're sorry. Username already exists. Please try again.</p>
             <a href="signup.php">back</a>
         <?php } else { ?>
             <h1>Welcome, <?= $username ?>!</h1>
-            <a href="jeopardygame.php">continue</a>
+            <a href="signin.html">Sign in</a>
+
         <?php } ?>
         </div>
     </body>

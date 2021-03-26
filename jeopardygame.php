@@ -36,7 +36,8 @@
     </style>
 </head>
 <?php error_reporting(0);?>
-<?php score.session.session_start();?>
+<?php session_start();?>
+<!-- score.session. -->
 <body>
 <?php include("heads.php");?>
 <div id="gameplay">
@@ -77,56 +78,7 @@
                         <!--<a href="cards.php" id="animals-1">$100</a>&ndash;&gt;-->
                         <a href='cards.php?id=animals-100'>$100</a>
 
-
-
-
-
-                        <!--                        <div class="value">-->
-                        <!--                            <a class="button" href="card.php" id="animals-1">100$</a>-->
-                        <!--                        </div>-->
-
-                        <!--                        <div id="popup" class="overlay">-->
-                        <!--                            <div class="popup">-->
-                        <!--                                <h2>Tables for 100$</h2>-->
-                        <!--                                <a class="close" href="#">&times;</a>-->
-                        <!--                                <div class="content">-->
-
-
-                        <!--                                    What tag defines a HTML table?<br>-->
-
-                        <!--                                    <form action="card.php" method="post">-->
-                        <!--                                        What is: <input type="text" name="animals-1"><br>-->
-
-                        <!--                                        <input type="submit">-->
-                        <!--                                    </form>-->
-                        <!--                                </div>-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
-
-
-
-
-
-
-
-
-
-
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <div class="question">Question</div>
                     <div class="answer">Answer</div>
